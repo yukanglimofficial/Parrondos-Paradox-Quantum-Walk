@@ -104,22 +104,14 @@ From the repository root:
 
 ```bash
 python -m pip install -U pip
-pip install -r requirements.txt
-pip install -e .
+python -m pip install -r requirements.txt
+python -m pip install --editable .
 ```
-
-Alternative (no install): set the module path instead of `pip install -e .`:
-
-- PowerShell:
-
-  ```powershell
-  $env:PYTHONPATH = "$PWD\src"
-  ```
 
 Optional (not required for the paper pipeline but good to have):
 
 ```bash
-pip install -r requirements-extra.txt
+python -m pip install -r requirements-extra.txt
 ```
 
 ### 3) Run the unit tests
@@ -177,8 +169,7 @@ Notes:
   - `scripts/stage2_pd_atlas.py`
   - `scripts/stage2_postprocess_figures.py`
 - **Stage 3** (confirmatory atlas):
-  - `scripts/stage3_confirmatory_pd_atlas_cpu.py` (recommended)
-  - `scripts/stage3_confirmatory_pd_atlas.py` (simple reference implementation)
+  - `scripts/stage3_confirmatory_pd_atlas_cpu.py` (confirmatory atlas simulator; paper entry point)
   - `scripts/stage3_postprocess_figures.py`
   - `scripts/stage3_extract_insights.py`
 
@@ -225,4 +216,4 @@ If you use this repository in academic work, please cite:
 - M. M. Jan *et al.*, “Experimental Realization of Parrondo’s Paradox in 1D Quantum Walks,”
   *Advanced Quantum Technologies* **3**, 1900127 (2020), DOI: 10.1002/qute.201900127.
 
----
+--- 
