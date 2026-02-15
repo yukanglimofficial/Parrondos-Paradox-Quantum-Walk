@@ -1,0 +1,34 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyd
+
+# Virtual environments
+.venv/
+.env/
+
+# Editors / tooling
+.vscode/
+.idea/
+.pytest_cache/
+
+# Packaging
+*.egg-info/
+build/
+dist/
+
+# Outputs: ignore everything by default, but keep the reproducibility runs
+outputs/**
+
+!outputs/
+!outputs/run_20260210_124831_stage0_jan/
+!outputs/run_20260210_124831_stage0_jan/**
+
+!outputs/run_20260210_135419_stage1_defect_phi/
+!outputs/run_20260210_135419_stage1_defect_phi/**
+
+!outputs/run_20260210_144641_stage2_pd_atlas/
+!outputs/run_20260210_144641_stage2_pd_atlas/**
+
+!outputs/run_20260212_090815_stage3_pd_confirmatory/
+!outputs/run_20260212_090815_stage3_pd_confirmatory/**

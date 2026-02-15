@@ -1,0 +1,18 @@
+T: 200
+sequences:
+- ABB
+Nphi: 72
+phi_start: 0.0
+phi_stop: 6.283185307179586
+coin_params_degrees:
+  A:
+  - 137.2
+  - 29.4
+  - 52.1
+  B:
+  - 149.6
+  - 67.4
+  - 132.5
+metrics:
+  T0: 100
+  x0_loc: 2

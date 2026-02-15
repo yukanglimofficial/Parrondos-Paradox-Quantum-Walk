@@ -1,0 +1,4 @@
+﻿scipy
+numba
+pyarrow
+rich

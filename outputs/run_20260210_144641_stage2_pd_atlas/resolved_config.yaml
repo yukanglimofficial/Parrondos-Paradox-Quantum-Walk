@@ -1,0 +1,26 @@
+T: 100
+N_traj: 100
+seed: 0
+sequences:
+- A
+- B
+- ABB
+Nphi: 24
+Np: 9
+phi_start: 0.0
+phi_stop: 6.283185307179586
+p_start: 0.0
+p_stop: 1.0
+coin_params_degrees:
+  A:
+  - 137.2
+  - 29.4
+  - 52.1
+  B:
+  - 149.6
+  - 67.4
+  - 132.5
+metrics:
+  T0: 50
+  x0_loc: 3
+w_thr: 0.1
