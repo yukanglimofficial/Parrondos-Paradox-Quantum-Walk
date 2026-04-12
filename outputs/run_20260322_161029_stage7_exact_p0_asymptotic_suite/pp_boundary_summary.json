@@ -1,0 +1,137 @@
+{
+  "T_boundary_list": [
+    3000,
+    6000
+  ],
+  "scan_points": 81,
+  "tol_pi": 5e-06,
+  "root_csv": "pp_boundary_estimates.csv",
+  "scan_csv": "pp_boundary_scan.csv",
+  "profile_csv": "pp_boundary_profile_samples.csv",
+  "intervals": {
+    "pp_primary": {
+      "fixed": {
+        "3000": {
+          "left_phi": 1.7328209169864455,
+          "right_phi": 1.7742000487396605,
+          "left_phi_over_pi": 0.5515740288628472,
+          "right_phi_over_pi": 0.5647454155815972,
+          "width": 0.04137913175321506,
+          "width_over_pi": 0.013171386718749964,
+          "midpoint_phi": 1.753510482863053,
+          "midpoint_phi_over_pi": 0.5581597222222222,
+          "strict_stage3_all_profile_points": 1,
+          "drift_stage3_all_profile_points": 1,
+          "pp_primary_all_profile_points": 1,
+          "pp_sensitivity_all_profile_points": 1
+        },
+        "6000": {
+          "left_phi": 1.733178845836952,
+          "right_phi": 1.7740083011411747,
+          "left_phi_over_pi": 0.5516879611545139,
+          "right_phi_over_pi": 0.5646843804253472,
+          "width": 0.04082945530422277,
+          "width_over_pi": 0.01299641927083332,
+          "midpoint_phi": 1.7535935734890633,
+          "midpoint_phi_over_pi": 0.5581861707899305,
+          "strict_stage3_all_profile_points": 1,
+          "drift_stage3_all_profile_points": 1,
+          "pp_primary_all_profile_points": 1,
+          "pp_sensitivity_all_profile_points": 1
+        }
+      },
+      "scaled": {
+        "3000": {
+          "left_phi": 1.7324502049627062,
+          "right_phi": 1.773675938637133,
+          "left_phi_over_pi": 0.5514560275607638,
+          "right_phi_over_pi": 0.564578586154514,
+          "width": 0.041225733674426834,
+          "width_over_pi": 0.013122558593750073,
+          "midpoint_phi": 1.7530630717999196,
+          "midpoint_phi_over_pi": 0.5580173068576388,
+          "strict_stage3_all_profile_points": 1,
+          "drift_stage3_all_profile_points": 1,
+          "pp_primary_all_profile_points": 1,
+          "pp_sensitivity_all_profile_points": 1
+        },
+        "6000": {
+          "left_phi": 1.7335623410339231,
+          "right_phi": 1.7737270713300626,
+          "left_phi_over_pi": 0.5518100314670138,
+          "right_phi_over_pi": 0.5645948621961806,
+          "width": 0.04016473029613943,
+          "width_over_pi": 0.012784830729166792,
+          "midpoint_phi": 1.7536447061819929,
+          "midpoint_phi_over_pi": 0.5582024468315973,
+          "strict_stage3_all_profile_points": 1,
+          "drift_stage3_all_profile_points": 1,
+          "pp_primary_all_profile_points": 1,
+          "pp_sensitivity_all_profile_points": 1
+        }
+      }
+    },
+    "pp_sensitivity": {
+      "fixed": {
+        "3000": {
+          "left_phi": 1.7245757702515603,
+          "right_phi": 1.7988715730781546,
+          "left_phi_over_pi": 0.5489495171440973,
+          "right_phi_over_pi": 0.5725986056857639,
+          "width": 0.07429580282659431,
+          "width_over_pi": 0.023649088541666592,
+          "midpoint_phi": 1.7617236716648574,
+          "midpoint_phi_over_pi": 0.5607740614149306,
+          "strict_stage3_all_profile_points": 1,
+          "drift_stage3_all_profile_points": 1,
+          "pp_primary_all_profile_points": 0,
+          "pp_sensitivity_all_profile_points": 1
+        },
+        "6000": {
+          "left_phi": 1.7251126635273202,
+          "right_phi": 1.7987309581725983,
+          "left_phi_over_pi": 0.5491204155815973,
+          "right_phi_over_pi": 0.5725538465711806,
+          "width": 0.07361829464527814,
+          "width_over_pi": 0.02343343098958325,
+          "midpoint_phi": 1.7619218108499592,
+          "midpoint_phi_over_pi": 0.5608371310763889,
+          "strict_stage3_all_profile_points": 1,
+          "drift_stage3_all_profile_points": 1,
+          "pp_primary_all_profile_points": 0,
+          "pp_sensitivity_all_profile_points": 1
+        }
+      },
+      "scaled": {
+        "3000": {
+          "left_phi": 1.7255600745904534,
+          "right_phi": 1.7985903432670425,
+          "left_phi_over_pi": 0.5492628309461806,
+          "right_phi_over_pi": 0.5725090874565973,
+          "width": 0.07303026867658913,
+          "width_over_pi": 0.02324625651041674,
+          "midpoint_phi": 1.762075208928748,
+          "midpoint_phi_over_pi": 0.560885959201389,
+          "strict_stage3_all_profile_points": 1,
+          "drift_stage3_all_profile_points": 1,
+          "pp_primary_all_profile_points": 0,
+          "pp_sensitivity_all_profile_points": 1
+        },
+        "6000": {
+          "left_phi": 1.725547291417221,
+          "right_phi": 1.79857756009381,
+          "left_phi_over_pi": 0.549258761935764,
+          "right_phi_over_pi": 0.5725050184461806,
+          "width": 0.07303026867658913,
+          "width_over_pi": 0.02324625651041674,
+          "midpoint_phi": 1.7620624257555155,
+          "midpoint_phi_over_pi": 0.5608818901909722,
+          "strict_stage3_all_profile_points": 1,
+          "drift_stage3_all_profile_points": 1,
+          "pp_primary_all_profile_points": 0,
+          "pp_sensitivity_all_profile_points": 1
+        }
+      }
+    }
+  }
+}

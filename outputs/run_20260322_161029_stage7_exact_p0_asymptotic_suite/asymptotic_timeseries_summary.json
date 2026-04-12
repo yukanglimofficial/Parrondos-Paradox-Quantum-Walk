@@ -1,0 +1,33 @@
+{
+  "T_timeseries": 12000,
+  "points": [
+    {
+      "label": "paper_max_T300",
+      "phi": 1.0471975511965976,
+      "phi_over_pi": 0.3333333333333333
+    },
+    {
+      "label": "refined_max_T6000",
+      "phi": 0.9285151620609833,
+      "phi_over_pi": 0.29555555555555557
+    },
+    {
+      "label": "pp_primary_mid_T6000",
+      "phi": 1.7535935734890633,
+      "phi_over_pi": 0.5581861707899305
+    },
+    {
+      "label": "pp_primary_left_T6000",
+      "phi": 1.733178845836952,
+      "phi_over_pi": 0.5516879611545139
+    },
+    {
+      "label": "pp_primary_right_T6000",
+      "phi": 1.7740083011411747,
+      "phi_over_pi": 0.5646843804253472
+    }
+  ],
+  "summary_csv": "asymptotic_windowed_summary.csv",
+  "extrapolation_csv": "asymptotic_extrapolation.csv",
+  "timeseries_dir": "asymptotic_timeseries"
+}

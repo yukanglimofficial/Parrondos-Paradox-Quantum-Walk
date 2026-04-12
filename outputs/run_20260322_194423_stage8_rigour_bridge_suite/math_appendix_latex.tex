@@ -1,0 +1,20 @@
+% Auto-generated Stage-8 math appendix snippets
+\subsection*{Proposition 1 (Phase damping is CPTP)}
+Let
+\[
+K_0=\sqrt{1-p}\,I,\qquad K_1=\sqrt{p}\,|0\rangle\langle 0|,\qquad K_2=\sqrt{p}\,|1\rangle\langle 1|.
+\]
+Then $\sum_k K_k^\dagger K_k=I$, so $\mathcal E_p(\rho)=\sum_k K_k\rho K_k^\dagger$ is CPTP. For
+\[\rho=\begin{pmatrix}a&c\\ c^\ast & b\end{pmatrix},\]
+direct multiplication gives
+\[\mathcal E_p(\rho)=\begin{pmatrix}a&(1-p)c\\ (1-p)c^\ast&b\end{pmatrix}.\]
+
+\subsection*{Proposition 2 ($\phi$-irrelevance at complete dephasing)}
+In the fully classicalized null, all off-diagonal coin coherences are removed at every step. The origin defect multiplies amplitudes at the origin by the common phase factor $e^{i\phi}$, which leaves diagonal probabilities unchanged. Therefore the $p=1$ null is $\phi$-invariant.
+
+\subsection*{Lemma 3 (Bias and drift can disagree)}
+Consider the distribution $\mathbb P(X=+1)=0.51$ and $\mathbb P(X=-100)=0.49$. Then $\Delta P=0.51-0.49>0$ but $\mathbb E[X]=0.51-49<0$. Hence right-heavy bias does not imply positive mean-position drift.
+
+\subsection*{Proposition 4 (Finite-horizon primary interval at $p=0$)}
+At fixed-window horizon $T=12000$, the exact follow-up estimates a nonzero primary PP interval $[0.551798,\,0.564652]\pi$ of width 0.012854\pi$.
+State this as a finite-horizon exact proposition, not as an infinite-time theorem.

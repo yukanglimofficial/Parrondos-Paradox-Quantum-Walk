@@ -1,0 +1,625 @@
+{
+  "T_refine_list": [
+    1500,
+    3000
+  ],
+  "coarse_step": 0.08726646259971647,
+  "coarse_step_over_pi": 0.027777777777777776,
+  "region_csv": "region_refine_grid.csv",
+  "intervals_csv": "region_refine_intervals.csv",
+  "regions": [
+    {
+      "region": "max_region",
+      "center_phi": 1.0035643198967394,
+      "center_phi_over_pi": 0.3194444444444444,
+      "halfwidth": 0.17453292519943295,
+      "halfwidth_over_pi": 0.05555555555555555,
+      "policies": [
+        {
+          "policy": "fixed",
+          "T": [
+            {
+              "T": 1500,
+              "T0": 200,
+              "T1": 250,
+              "max_adv_phi": 0.9293878266869804,
+              "max_adv_phi_over_pi": 0.29583333333333334,
+              "max_adv_v": 0.16044409684245672,
+              "max_adv_w_loc3": 0.579317487364196,
+              "max_adv_w_loc5": 0.585560028384749,
+              "max_adv_v_fit_ABB": 0.10824935472580505,
+              "intervals": {
+                "strict_stage3": [
+                  {
+                    "index": 0,
+                    "phi_left": 0.8290313946973065,
+                    "phi_right": 1.1780972450961724,
+                    "phi_left_over_pi": 0.2638888888888889,
+                    "phi_right_over_pi": 0.375,
+                    "n_points": 241,
+                    "sampled_width": 0.34906585039886595,
+                    "sampled_width_over_pi": 0.11111111111111113
+                  }
+                ],
+                "drift_stage3": [
+                  {
+                    "index": 0,
+                    "phi_left": 0.8290313946973065,
+                    "phi_right": 1.1780972450961724,
+                    "phi_left_over_pi": 0.2638888888888889,
+                    "phi_right_over_pi": 0.375,
+                    "n_points": 241,
+                    "sampled_width": 0.34906585039886595,
+                    "sampled_width_over_pi": 0.11111111111111113
+                  }
+                ],
+                "pp_primary": [],
+                "pp_sensitivity": []
+              }
+            },
+            {
+              "T": 3000,
+              "T0": 200,
+              "T1": 250,
+              "max_adv_phi": 0.9293878266869804,
+              "max_adv_phi_over_pi": 0.29583333333333334,
+              "max_adv_v": 0.1604462906115135,
+              "max_adv_w_loc3": 0.5793186214819047,
+              "max_adv_w_loc5": 0.5855559229890653,
+              "max_adv_v_fit_ABB": 0.10825026632116538,
+              "intervals": {
+                "strict_stage3": [
+                  {
+                    "index": 0,
+                    "phi_left": 0.8290313946973065,
+                    "phi_right": 1.1780972450961724,
+                    "phi_left_over_pi": 0.2638888888888889,
+                    "phi_right_over_pi": 0.375,
+                    "n_points": 241,
+                    "sampled_width": 0.34906585039886595,
+                    "sampled_width_over_pi": 0.11111111111111113
+                  }
+                ],
+                "drift_stage3": [
+                  {
+                    "index": 0,
+                    "phi_left": 0.8290313946973065,
+                    "phi_right": 1.1780972450961724,
+                    "phi_left_over_pi": 0.2638888888888889,
+                    "phi_right_over_pi": 0.375,
+                    "n_points": 241,
+                    "sampled_width": 0.34906585039886595,
+                    "sampled_width_over_pi": 0.11111111111111113
+                  }
+                ],
+                "pp_primary": [],
+                "pp_sensitivity": []
+              }
+            }
+          ]
+        },
+        {
+          "policy": "scaled",
+          "T": [
+            {
+              "T": 1500,
+              "T0": 1000,
+              "T1": 1250,
+              "max_adv_phi": 0.9279333856436518,
+              "max_adv_phi_over_pi": 0.29537037037037034,
+              "max_adv_v": 0.1604035287202722,
+              "max_adv_w_loc3": 0.5796095097631437,
+              "max_adv_w_loc5": 0.5858260188136123,
+              "max_adv_v_fit_ABB": 0.10809229000901896,
+              "intervals": {
+                "strict_stage3": [
+                  {
+                    "index": 0,
+                    "phi_left": 0.8290313946973065,
+                    "phi_right": 1.1780972450961724,
+                    "phi_left_over_pi": 0.2638888888888889,
+                    "phi_right_over_pi": 0.375,
+                    "n_points": 241,
+                    "sampled_width": 0.34906585039886595,
+                    "sampled_width_over_pi": 0.11111111111111113
+                  }
+                ],
+                "drift_stage3": [
+                  {
+                    "index": 0,
+                    "phi_left": 0.8290313946973065,
+                    "phi_right": 1.1780972450961724,
+                    "phi_left_over_pi": 0.2638888888888889,
+                    "phi_right_over_pi": 0.375,
+                    "n_points": 241,
+                    "sampled_width": 0.34906585039886595,
+                    "sampled_width_over_pi": 0.11111111111111113
+                  }
+                ],
+                "pp_primary": [],
+                "pp_sensitivity": []
+              }
+            },
+            {
+              "T": 3000,
+              "T0": 2000,
+              "T1": 2500,
+              "max_adv_phi": 0.9293878266869804,
+              "max_adv_phi_over_pi": 0.29583333333333334,
+              "max_adv_v": 0.16043867737608836,
+              "max_adv_w_loc3": 0.5793226833400541,
+              "max_adv_w_loc5": 0.5855525851169694,
+              "max_adv_v_fit_ABB": 0.10824928148992002,
+              "intervals": {
+                "strict_stage3": [
+                  {
+                    "index": 0,
+                    "phi_left": 0.8290313946973065,
+                    "phi_right": 1.1780972450961724,
+                    "phi_left_over_pi": 0.2638888888888889,
+                    "phi_right_over_pi": 0.375,
+                    "n_points": 241,
+                    "sampled_width": 0.34906585039886595,
+                    "sampled_width_over_pi": 0.11111111111111113
+                  }
+                ],
+                "drift_stage3": [
+                  {
+                    "index": 0,
+                    "phi_left": 0.8290313946973065,
+                    "phi_right": 1.1780972450961724,
+                    "phi_left_over_pi": 0.2638888888888889,
+                    "phi_right_over_pi": 0.375,
+                    "n_points": 241,
+                    "sampled_width": 0.34906585039886595,
+                    "sampled_width_over_pi": 0.11111111111111113
+                  }
+                ],
+                "pp_primary": [],
+                "pp_sensitivity": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region": "pp_region",
+      "center_phi": 1.7453292519943295,
+      "center_phi_over_pi": 0.5555555555555556,
+      "halfwidth": 0.1308996938995747,
+      "halfwidth_over_pi": 0.041666666666666664,
+      "policies": [
+        {
+          "policy": "fixed",
+          "T": [
+            {
+              "T": 1500,
+              "T0": 200,
+              "T1": 250,
+              "max_adv_phi": 1.6144295580947547,
+              "max_adv_phi_over_pi": 0.5138888888888888,
+              "max_adv_v": 0.1270512396425127,
+              "max_adv_w_loc3": 0.3295786139609887,
+              "max_adv_w_loc5": 0.351840224736373,
+              "max_adv_v_fit_ABB": 0.11366654935317891,
+              "intervals": {
+                "strict_stage3": [
+                  {
+                    "index": 0,
+                    "phi_left": 1.6144295580947547,
+                    "phi_right": 1.8762289458939043,
+                    "phi_left_over_pi": 0.5138888888888888,
+                    "phi_right_over_pi": 0.5972222222222222,
+                    "n_points": 241,
+                    "sampled_width": 0.2617993877991496,
+                    "sampled_width_over_pi": 0.08333333333333338
+                  }
+                ],
+                "drift_stage3": [
+                  {
+                    "index": 0,
+                    "phi_left": 1.6144295580947547,
+                    "phi_right": 1.8762289458939043,
+                    "phi_left_over_pi": 0.5138888888888888,
+                    "phi_right_over_pi": 0.5972222222222222,
+                    "n_points": 241,
+                    "sampled_width": 0.2617993877991496,
+                    "sampled_width_over_pi": 0.08333333333333338
+                  }
+                ],
+                "pp_primary": [
+                  {
+                    "index": 0,
+                    "phi_left": 1.734420944169365,
+                    "phi_right": 1.7747816831217338,
+                    "phi_left_over_pi": 0.5520833333333334,
+                    "phi_right_over_pi": 0.5649305555555555,
+                    "n_points": 38,
+                    "sampled_width": 0.0403607389523688,
+                    "sampled_width_over_pi": 0.0128472222222222
+                  }
+                ],
+                "pp_sensitivity": [
+                  {
+                    "index": 0,
+                    "phi_left": 1.7246034671268968,
+                    "phi_right": 1.7987799603366559,
+                    "phi_left_over_pi": 0.5489583333333333,
+                    "phi_right_over_pi": 0.5725694444444445,
+                    "n_points": 69,
+                    "sampled_width": 0.07417649320975905,
+                    "sampled_width_over_pi": 0.023611111111111128
+                  }
+                ]
+              }
+            },
+            {
+              "T": 3000,
+              "T0": 200,
+              "T1": 250,
+              "max_adv_phi": 1.6144295580947547,
+              "max_adv_phi_over_pi": 0.5138888888888888,
+              "max_adv_v": 0.12704518363355818,
+              "max_adv_w_loc3": 0.3293544372137631,
+              "max_adv_w_loc5": 0.3513274771645657,
+              "max_adv_v_fit_ABB": 0.11366586319316045,
+              "intervals": {
+                "strict_stage3": [
+                  {
+                    "index": 0,
+                    "phi_left": 1.6144295580947547,
+                    "phi_right": 1.8762289458939043,
+                    "phi_left_over_pi": 0.5138888888888888,
+                    "phi_right_over_pi": 0.5972222222222222,
+                    "n_points": 241,
+                    "sampled_width": 0.2617993877991496,
+                    "sampled_width_over_pi": 0.08333333333333338
+                  }
+                ],
+                "drift_stage3": [
+                  {
+                    "index": 0,
+                    "phi_left": 1.6144295580947547,
+                    "phi_right": 1.8762289458939043,
+                    "phi_left_over_pi": 0.5138888888888888,
+                    "phi_right_over_pi": 0.5972222222222222,
+                    "n_points": 241,
+                    "sampled_width": 0.2617993877991496,
+                    "sampled_width_over_pi": 0.08333333333333338
+                  }
+                ],
+                "pp_primary": [
+                  {
+                    "index": 0,
+                    "phi_left": 1.7333301133868686,
+                    "phi_right": 1.7736908523392374,
+                    "phi_left_over_pi": 0.5517361111111111,
+                    "phi_right_over_pi": 0.5645833333333333,
+                    "n_points": 38,
+                    "sampled_width": 0.0403607389523688,
+                    "sampled_width_over_pi": 0.0128472222222222
+                  }
+                ],
+                "pp_sensitivity": [
+                  {
+                    "index": 0,
+                    "phi_left": 1.7246034671268968,
+                    "phi_right": 1.7987799603366559,
+                    "phi_left_over_pi": 0.5489583333333333,
+                    "phi_right_over_pi": 0.5725694444444445,
+                    "n_points": 69,
+                    "sampled_width": 0.07417649320975905,
+                    "sampled_width_over_pi": 0.023611111111111128
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "policy": "scaled",
+          "T": [
+            {
+              "T": 1500,
+              "T0": 1000,
+              "T1": 1250,
+              "max_adv_phi": 1.6144295580947547,
+              "max_adv_phi_over_pi": 0.5138888888888888,
+              "max_adv_v": 0.12700506675170964,
+              "max_adv_w_loc3": 0.32919768665262533,
+              "max_adv_w_loc5": 0.35102607099423916,
+              "max_adv_v_fit_ABB": 0.11361931500935829,
+              "intervals": {
+                "strict_stage3": [
+                  {
+                    "index": 0,
+                    "phi_left": 1.6144295580947547,
+                    "phi_right": 1.8762289458939043,
+                    "phi_left_over_pi": 0.5138888888888888,
+                    "phi_right_over_pi": 0.5972222222222222,
+                    "n_points": 241,
+                    "sampled_width": 0.2617993877991496,
+                    "sampled_width_over_pi": 0.08333333333333338
+                  }
+                ],
+                "drift_stage3": [
+                  {
+                    "index": 0,
+                    "phi_left": 1.6144295580947547,
+                    "phi_right": 1.8762289458939043,
+                    "phi_left_over_pi": 0.5138888888888888,
+                    "phi_right_over_pi": 0.5972222222222222,
+                    "n_points": 241,
+                    "sampled_width": 0.2617993877991496,
+                    "sampled_width_over_pi": 0.08333333333333338
+                  }
+                ],
+                "pp_primary": [
+                  {
+                    "index": 0,
+                    "phi_left": 1.732239282604372,
+                    "phi_right": 1.772600021556741,
+                    "phi_left_over_pi": 0.5513888888888889,
+                    "phi_right_over_pi": 0.5642361111111112,
+                    "n_points": 38,
+                    "sampled_width": 0.040360738952369024,
+                    "sampled_width_over_pi": 0.012847222222222272
+                  }
+                ],
+                "pp_sensitivity": [
+                  {
+                    "index": 0,
+                    "phi_left": 1.7246034671268968,
+                    "phi_right": 1.7965982987716629,
+                    "phi_left_over_pi": 0.5489583333333333,
+                    "phi_right_over_pi": 0.571875,
+                    "n_points": 67,
+                    "sampled_width": 0.07199483164476606,
+                    "sampled_width_over_pi": 0.022916666666666655
+                  }
+                ]
+              }
+            },
+            {
+              "T": 3000,
+              "T0": 2000,
+              "T1": 2500,
+              "max_adv_phi": 1.6144295580947547,
+              "max_adv_phi_over_pi": 0.5138888888888888,
+              "max_adv_v": 0.12705985739109538,
+              "max_adv_w_loc3": 0.32915481853766854,
+              "max_adv_w_loc5": 0.35086044430938507,
+              "max_adv_v_fit_ABB": 0.11367156827563304,
+              "intervals": {
+                "strict_stage3": [
+                  {
+                    "index": 0,
+                    "phi_left": 1.6144295580947547,
+                    "phi_right": 1.8762289458939043,
+                    "phi_left_over_pi": 0.5138888888888888,
+                    "phi_right_over_pi": 0.5972222222222222,
+                    "n_points": 241,
+                    "sampled_width": 0.2617993877991496,
+                    "sampled_width_over_pi": 0.08333333333333338
+                  }
+                ],
+                "drift_stage3": [
+                  {
+                    "index": 0,
+                    "phi_left": 1.6144295580947547,
+                    "phi_right": 1.8762289458939043,
+                    "phi_left_over_pi": 0.5138888888888888,
+                    "phi_right_over_pi": 0.5972222222222222,
+                    "n_points": 241,
+                    "sampled_width": 0.2617993877991496,
+                    "sampled_width_over_pi": 0.08333333333333338
+                  }
+                ],
+                "pp_primary": [
+                  {
+                    "index": 0,
+                    "phi_left": 1.7333301133868686,
+                    "phi_right": 1.772600021556741,
+                    "phi_left_over_pi": 0.5517361111111111,
+                    "phi_right_over_pi": 0.5642361111111112,
+                    "n_points": 37,
+                    "sampled_width": 0.039269908169872414,
+                    "sampled_width_over_pi": 0.0125
+                  }
+                ],
+                "pp_sensitivity": [
+                  {
+                    "index": 0,
+                    "phi_left": 1.7256942979093934,
+                    "phi_right": 1.7976891295541595,
+                    "phi_left_over_pi": 0.5493055555555556,
+                    "phi_right_over_pi": 0.5722222222222223,
+                    "n_points": 67,
+                    "sampled_width": 0.07199483164476606,
+                    "sampled_width_over_pi": 0.022916666666666655
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region": "borderline_drift_region",
+      "center_phi": 2.007128639793479,
+      "center_phi_over_pi": 0.6388888888888888,
+      "halfwidth": 0.08726646259971647,
+      "halfwidth_over_pi": 0.027777777777777776,
+      "policies": [
+        {
+          "policy": "fixed",
+          "T": [
+            {
+              "T": 1500,
+              "T0": 200,
+              "T1": 250,
+              "max_adv_phi": 2.0758509790907556,
+              "max_adv_phi_over_pi": 0.6607638888888888,
+              "max_adv_v": 0.09661276582216136,
+              "max_adv_w_loc3": 0.6095850617128313,
+              "max_adv_w_loc5": 0.6339672427140106,
+              "max_adv_v_fit_ABB": 0.08805707031654206,
+              "intervals": {
+                "strict_stage3": [
+                  {
+                    "index": 0,
+                    "phi_left": 1.9198621771937625,
+                    "phi_right": 2.011491962923465,
+                    "phi_left_over_pi": 0.6111111111111112,
+                    "phi_right_over_pi": 0.6402777777777778,
+                    "n_points": 85,
+                    "sampled_width": 0.09162978572970237,
+                    "sampled_width_over_pi": 0.02916666666666669
+                  }
+                ],
+                "drift_stage3": [
+                  {
+                    "index": 0,
+                    "phi_left": 1.9198621771937625,
+                    "phi_right": 2.011491962923465,
+                    "phi_left_over_pi": 0.6111111111111112,
+                    "phi_right_over_pi": 0.6402777777777778,
+                    "n_points": 85,
+                    "sampled_width": 0.09162978572970237,
+                    "sampled_width_over_pi": 0.02916666666666669
+                  }
+                ],
+                "pp_primary": [],
+                "pp_sensitivity": []
+              }
+            },
+            {
+              "T": 3000,
+              "T0": 200,
+              "T1": 250,
+              "max_adv_phi": 2.0780326406557483,
+              "max_adv_phi_over_pi": 0.6614583333333333,
+              "max_adv_v": 0.09662528538460975,
+              "max_adv_w_loc3": 0.6112243790134613,
+              "max_adv_w_loc5": 0.6354673996741718,
+              "max_adv_v_fit_ABB": 0.08807591645167612,
+              "intervals": {
+                "strict_stage3": [
+                  {
+                    "index": 0,
+                    "phi_left": 1.9198621771937625,
+                    "phi_right": 2.011491962923465,
+                    "phi_left_over_pi": 0.6111111111111112,
+                    "phi_right_over_pi": 0.6402777777777778,
+                    "n_points": 85,
+                    "sampled_width": 0.09162978572970237,
+                    "sampled_width_over_pi": 0.02916666666666669
+                  }
+                ],
+                "drift_stage3": [
+                  {
+                    "index": 0,
+                    "phi_left": 1.9198621771937625,
+                    "phi_right": 2.011491962923465,
+                    "phi_left_over_pi": 0.6111111111111112,
+                    "phi_right_over_pi": 0.6402777777777778,
+                    "n_points": 85,
+                    "sampled_width": 0.09162978572970237,
+                    "sampled_width_over_pi": 0.02916666666666669
+                  }
+                ],
+                "pp_primary": [],
+                "pp_sensitivity": []
+              }
+            }
+          ]
+        },
+        {
+          "policy": "scaled",
+          "T": [
+            {
+              "T": 1500,
+              "T0": 1000,
+              "T1": 1250,
+              "max_adv_phi": 2.088940948480713,
+              "max_adv_phi_over_pi": 0.6649305555555556,
+              "max_adv_v": 0.09664512448398108,
+              "max_adv_w_loc3": 0.6189890667672291,
+              "max_adv_w_loc5": 0.6427107505806037,
+              "max_adv_v_fit_ABB": 0.0881641904784445,
+              "intervals": {
+                "strict_stage3": [
+                  {
+                    "index": 0,
+                    "phi_left": 1.9198621771937625,
+                    "phi_right": 2.0093103013584717,
+                    "phi_left_over_pi": 0.6111111111111112,
+                    "phi_right_over_pi": 0.6395833333333333,
+                    "n_points": 83,
+                    "sampled_width": 0.08944812416470915,
+                    "sampled_width_over_pi": 0.02847222222222215
+                  }
+                ],
+                "drift_stage3": [
+                  {
+                    "index": 0,
+                    "phi_left": 1.9198621771937625,
+                    "phi_right": 2.0093103013584717,
+                    "phi_left_over_pi": 0.6111111111111112,
+                    "phi_right_over_pi": 0.6395833333333333,
+                    "n_points": 83,
+                    "sampled_width": 0.08944812416470915,
+                    "sampled_width_over_pi": 0.02847222222222215
+                  }
+                ],
+                "pp_primary": [],
+                "pp_sensitivity": []
+              }
+            },
+            {
+              "T": 3000,
+              "T0": 2000,
+              "T1": 2500,
+              "max_adv_phi": 2.076941809873252,
+              "max_adv_phi_over_pi": 0.6611111111111111,
+              "max_adv_v": 0.09663691917377734,
+              "max_adv_w_loc3": 0.6103163199200063,
+              "max_adv_w_loc5": 0.6346886817018491,
+              "max_adv_v_fit_ABB": 0.08808351609333462,
+              "intervals": {
+                "strict_stage3": [
+                  {
+                    "index": 0,
+                    "phi_left": 1.9198621771937625,
+                    "phi_right": 2.0136736244884577,
+                    "phi_left_over_pi": 0.6111111111111112,
+                    "phi_right_over_pi": 0.6409722222222222,
+                    "n_points": 87,
+                    "sampled_width": 0.09381144729469515,
+                    "sampled_width_over_pi": 0.029861111111111092
+                  }
+                ],
+                "drift_stage3": [
+                  {
+                    "index": 0,
+                    "phi_left": 1.9198621771937625,
+                    "phi_right": 2.0136736244884577,
+                    "phi_left_over_pi": 0.6111111111111112,
+                    "phi_right_over_pi": 0.6409722222222222,
+                    "n_points": 87,
+                    "sampled_width": 0.09381144729469515,
+                    "sampled_width_over_pi": 0.029861111111111092
+                  }
+                ],
+                "pp_primary": [],
+                "pp_sensitivity": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

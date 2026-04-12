@@ -1,0 +1,122 @@
+# mrc.yaml - Minimal Reproducible Config (locked production)
+# Guardrail (A): PD p means: each application scales coin off-diagonals by (1 - p) (NOT phase-flip).
+# Guardrail (B): Shift MUST NOT wrap around (no circular np.roll; use slicing with zero fill).
+# Confirmatory step order (plan.txt): coin -> defect -> coin-noise -> shift
+
+project: "Project A - defect x noise Parrondo transport"
+version: "v18 reviewer-locked"
+tensor_order: "coin x position"
+step_order: "coin -> defect -> coin-noise -> shift"   # confirmatory
+
+initial_state:
+  position: 0
+  coin_state: "(|0> - i|1>)/sqrt(2)"                  # Jan et al.
+
+coins:
+  A:
+    alpha_deg: 137.2
+    beta_deg: 29.4
+    gamma_deg: 52.1
+  B:
+    alpha_deg: 149.6
+    beta_deg: 67.4
+    gamma_deg: 132.5
+
+sequences:
+  primary: "ABB"
+  baselines: ["A", "B", "AB", "ABAB..."]
+  nulls: ["frequency_matched_random_mixture", "Z_cp"]
+
+defect:
+  type: "origin_phase"
+  phi_domain: "[0,2pi)"
+  V_phi: "I_p + (exp(i*phi)-1)|x=0><x=0|"
+
+noise:
+  insertion: "pre_shift"                              # confirmatory
+  headline_channel: "phase_damping_PD"
+  p_domain: "[0,1]"
+  PD_kraus:
+    K0: "sqrt(1-p) * I"
+    K1: "sqrt(p) * |0><0|"
+    K2: "sqrt(p) * |1><1|"
+  contrast_channel_supplement: "depolarizing"
+
+simulation:
+  horizons:
+    T_rep: 10
+    T_long: 300
+  late_windows:
+    T0: 200
+    T1: 250
+  lattice:
+    mode: "reachable_or_padded"
+    padded_margin_m: 2
+  localization_overlay:
+    x0_primary: 3
+    x0_sensitivity: 5
+    w_thr_primary: 0.10
+    w_thr_sensitivity: 0.15
+    delta_w_sensitivity: 0.05
+
+stage3_grid:
+  N_phi: 72
+  N_p: 31
+  phi_i: "2pi*i/N_phi"
+  p_j: "j/(N_p-1)"
+
+stochastic_estimation:
+  N_traj: 400
+  bootstrap:
+    B: 1000
+    ci: "percentile"
+    alpha: 0.05
+  rng_policy:
+    base_seed: 20260125
+    seed_rule: "seed = hash(base_seed, channel, sequence, i, j, traj_id) mod 2^32"
+
+drift_estimation:
+  primary: "v_fit (OLS slope of <x>(t) vs t on [T0,T])"
+  guardrails: ["v_T", "v_fit2 on [T1,T]", "delta_v stability"]
+  supplement_diagnostics: ["v_fit(T) convergence", "Theil-Sen slope v_TS"]
+
+validation_and_tolerances:
+  density_matrix_validation:
+    N_val: 25
+    pass_if:
+      dv_fit_abs: 0.01
+      dw_loc_abs: 0.02
+      dP0bar_abs: 0.02
+  padding_invariance:
+    N_pad: 10
+    compare_m_vs_m_plus_2: true
+    pass_if:
+      dv_fit_abs: 0.005
+      dw_loc_abs: 0.01
+      dP0bar_abs: 0.01
+
+decisiveness_rule:
+  ci_excludes_zero: true
+  magnitude_floor: ">|v_min(T)| from nulls"
+  stability_guardrails: true
+
+eligibility_masks:
+  strict: "A decisively losing AND B decisively losing"
+  weak: "A not decisively winning AND B not decisively winning"
+
+mask_transparency_protocol:
+  required_layers:
+    - "raw v_fit(ABB) (unmasked)"
+    - "Adv_v (unmasked)"
+    - "v_A decisiveness map (unmasked)"
+    - "v_B decisiveness map (unmasked)"
+    - "strict-mask + directed-transport overlay"
+
+region_level_fp_control:
+  adjacency: "4-connected; phi periodic wrap; p non-periodic"
+  positive_predicate: "strict AND ABB drift-win AND (w_loc < w_thr)"
+  null_families: ["frequency_matched_random_mixture", "Z_cp"]
+  statistic: "S_max (largest positive cluster size)"
+  alpha: 0.05
+  threshold: "s* = max(quantile_{1-alpha} S_max under each null family)"
+  claim_rule: "Only clusters with size > s* are inferentially supported regions"

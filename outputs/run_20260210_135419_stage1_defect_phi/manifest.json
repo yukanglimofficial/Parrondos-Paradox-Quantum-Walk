@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-02-10T05:54:19Z",
+  "tag": "stage1_defect_phi",
+  "python": "3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.4.2",
+    "matplotlib": "3.10.8",
+    "PyYAML": "6.0.3",
+    "tqdm": "4.67.3",
+    "pytest": "9.0.2"
+  },
+  "resolved": {
+    "T": 200,
+    "sequences": [
+      "ABB"
+    ],
+    "Nphi": 72,
+    "phi_start": 0.0,
+    "phi_stop": 6.283185307179586,
+    "coin_params_degrees": {
+      "A": [
+        137.2,
+        29.4,
+        52.1
+      ],
+      "B": [
+        149.6,
+        67.4,
+        132.5
+      ]
+    },
+    "metrics": {
+      "T0": 100,
+      "x0_loc": 2
+    }
+  }
+}

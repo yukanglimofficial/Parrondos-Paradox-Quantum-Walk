@@ -1,0 +1,179 @@
+{
+  "stage4_run_dir": "outputs\\run_20260322_094517_stage4_exact_p0_audit",
+  "stage5_run_dir": "outputs\\run_20260322_105844_stage5_rigour_suite_longrun",
+  "stage7_run_dir": "outputs\\run_20260322_161029_stage7_exact_p0_asymptotic_suite",
+  "selected_point_long_summary": {
+    "T_timeseries": 24000,
+    "checkpoints": [
+      3000,
+      6000,
+      8000,
+      10000,
+      12000,
+      16000,
+      20000,
+      24000
+    ],
+    "points": [
+      {
+        "label": "paper_max_T300",
+        "phi": 1.0471975511965976,
+        "phi_over_pi": 0.3333333333333333
+      },
+      {
+        "label": "refined_max_T6000",
+        "phi": 0.9285151620609833,
+        "phi_over_pi": 0.29555555555555557
+      },
+      {
+        "label": "pp_primary_mid_T6000",
+        "phi": 1.7535935734890633,
+        "phi_over_pi": 0.5581861707899305
+      },
+      {
+        "label": "pp_primary_left_T6000",
+        "phi": 1.733178845836952,
+        "phi_over_pi": 0.5516879611545139
+      },
+      {
+        "label": "pp_primary_right_T6000",
+        "phi": 1.7740083011411747,
+        "phi_over_pi": 0.5646843804253472
+      }
+    ],
+    "summary_csv": "selected_points_long_summary.csv",
+    "extrapolation_csv": "selected_points_limit_fits.csv",
+    "timeseries_dir": "selected_point_timeseries"
+  },
+  "boundary_continuation_summary": {
+    "T_boundary_list": [
+      12000
+    ],
+    "side_scan_points": 31,
+    "side_margin_pi": 0.006,
+    "tol_pi": 2e-06,
+    "csv": "boundary_continuation.csv",
+    "intervals": {
+      "pp_primary": {
+        "fixed": {
+          "12000": {
+            "left_phi": 1.7335249119026988,
+            "right_phi": 1.7739076720014895,
+            "left_phi_over_pi": 0.5517981174045138,
+            "right_phi_over_pi": 0.5646523491753472,
+            "width": 0.040382760098790715,
+            "width_over_pi": 0.012854231770833396,
+            "midpoint_phi": 1.753716291952094,
+            "midpoint_phi_over_pi": 0.5582252332899305,
+            "strict_stage3_all_profile_points": 1,
+            "drift_stage3_all_profile_points": 1,
+            "pp_primary_all_profile_points": 0,
+            "pp_sensitivity_all_profile_points": 1
+          }
+        },
+        "scaled": {
+          "12000": {
+            "left_phi": 1.7338881585532704,
+            "right_phi": 1.7738242234466286,
+            "left_phi_over_pi": 0.551913742404514,
+            "right_phi_over_pi": 0.5646257866753472,
+            "width": 0.039936064893358214,
+            "width_over_pi": 0.012712044270833332,
+            "midpoint_phi": 1.7538561909999495,
+            "midpoint_phi_over_pi": 0.5582697645399306,
+            "strict_stage3_all_profile_points": 1,
+            "drift_stage3_all_profile_points": 1,
+            "pp_primary_all_profile_points": 0,
+            "pp_sensitivity_all_profile_points": 1
+          }
+        }
+      },
+      "pp_sensitivity": {
+        "fixed": {
+          "12000": {
+            "left_phi": 1.7253371360492809,
+            "right_phi": 1.798647714148509,
+            "left_phi_over_pi": 0.549191867404514,
+            "right_phi_over_pi": 0.5725273491753472,
+            "width": 0.07331057809922825,
+            "width_over_pi": 0.023335481770833243,
+            "midpoint_phi": 1.761992425098895,
+            "midpoint_phi_over_pi": 0.5608596082899306,
+            "strict_stage3_all_profile_points": 1,
+            "drift_stage3_all_profile_points": 1,
+            "pp_primary_all_profile_points": 0,
+            "pp_sensitivity_all_profile_points": 0
+          }
+        },
+        "scaled": {
+          "12000": {
+            "left_phi": 1.7255285768516089,
+            "right_phi": 1.7985691743321692,
+            "left_phi_over_pi": 0.5492528049045139,
+            "right_phi_over_pi": 0.5725023491753471,
+            "width": 0.07304059748056035,
+            "width_over_pi": 0.023249544270833235,
+            "midpoint_phi": 1.762048875591889,
+            "midpoint_phi_over_pi": 0.5608775770399306,
+            "strict_stage3_all_profile_points": 1,
+            "drift_stage3_all_profile_points": 1,
+            "pp_primary_all_profile_points": 0,
+            "pp_sensitivity_all_profile_points": 1
+          }
+        }
+      }
+    }
+  },
+  "spectral_localized_subspace_summary": {
+    "points": [
+      {
+        "label": "paper_max_T300",
+        "phi": 1.0471975511965976,
+        "phi_over_pi": 0.3333333333333333
+      },
+      {
+        "label": "refined_max_T6000",
+        "phi": 0.9285151620609833,
+        "phi_over_pi": 0.29555555555555557
+      },
+      {
+        "label": "pp_primary_mid_T6000",
+        "phi": 1.7535935734890633,
+        "phi_over_pi": 0.5581861707899305
+      },
+      {
+        "label": "pp_primary_left_T6000",
+        "phi": 1.733178845836952,
+        "phi_over_pi": 0.5516879611545139
+      },
+      {
+        "label": "pp_primary_right_T6000",
+        "phi": 1.7740083011411747,
+        "phi_over_pi": 0.5646843804253472
+      }
+    ],
+    "spectral_L_list": [
+      120,
+      160,
+      220,
+      300
+    ],
+    "top_k_modes": 16,
+    "projector_k_list": [
+      2,
+      4,
+      8,
+      16
+    ],
+    "n_cycles_ring": 4000,
+    "burn_cycles_ring": 800,
+    "modes_csv": "spectral_localized_modes.csv",
+    "projector_csv": "spectral_projector_decomposition.csv",
+    "tail_csv": "spectral_tail_fits.csv",
+    "convergence_csv": "spectral_subspace_convergence.csv"
+  },
+  "proof_snippets_md": "proof_snippets.md",
+  "math_appendix_tex": "math_appendix_latex.tex",
+  "results_patch_tex": "results_patch_latex.tex",
+  "stage8_report_md": "stage8_report.md"
+}

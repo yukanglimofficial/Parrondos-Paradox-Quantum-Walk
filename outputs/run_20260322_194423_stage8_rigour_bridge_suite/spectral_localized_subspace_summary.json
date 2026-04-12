@@ -1,0 +1,48 @@
+{
+  "points": [
+    {
+      "label": "paper_max_T300",
+      "phi": 1.0471975511965976,
+      "phi_over_pi": 0.3333333333333333
+    },
+    {
+      "label": "refined_max_T6000",
+      "phi": 0.9285151620609833,
+      "phi_over_pi": 0.29555555555555557
+    },
+    {
+      "label": "pp_primary_mid_T6000",
+      "phi": 1.7535935734890633,
+      "phi_over_pi": 0.5581861707899305
+    },
+    {
+      "label": "pp_primary_left_T6000",
+      "phi": 1.733178845836952,
+      "phi_over_pi": 0.5516879611545139
+    },
+    {
+      "label": "pp_primary_right_T6000",
+      "phi": 1.7740083011411747,
+      "phi_over_pi": 0.5646843804253472
+    }
+  ],
+  "spectral_L_list": [
+    120,
+    160,
+    220,
+    300
+  ],
+  "top_k_modes": 16,
+  "projector_k_list": [
+    2,
+    4,
+    8,
+    16
+  ],
+  "n_cycles_ring": 4000,
+  "burn_cycles_ring": 800,
+  "modes_csv": "spectral_localized_modes.csv",
+  "projector_csv": "spectral_projector_decomposition.csv",
+  "tail_csv": "spectral_tail_fits.csv",
+  "convergence_csv": "spectral_subspace_convergence.csv"
+}

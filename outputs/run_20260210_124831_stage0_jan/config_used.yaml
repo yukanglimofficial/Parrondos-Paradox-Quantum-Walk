@@ -1,0 +1,28 @@
+T: 50
+N_traj: 200
+seed: 0
+sequence: ABB
+phi: 0.0
+p: 0.3
+coin_params_degrees:
+  A:
+  - 137.2
+  - 29.4
+  - 52.1
+  B:
+  - 149.6
+  - 67.4
+  - 132.5
+metrics:
+  T0: 25
+  x0_loc: 2
+stage0_jan:
+  T: 50
+  phi: 0.0
+  sequences:
+  - A
+  - B
+  - ABB
+  metrics:
+    T0: 25
+    x0_loc: 2

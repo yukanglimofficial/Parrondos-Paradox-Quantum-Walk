@@ -1,0 +1,12 @@
+Stage3 PD confirmatory (CPU-only, parallel)
+run_dir=outputs\run_20260212_090815_stage3_pd_confirmatory
+config=mrc.yaml
+N_phi=72, N_p=31, total=2232
+T=300, T0=200, T1=250, N_traj=400, B=1000, alpha=0.05, pad_m=2
+jobs=22
+w_thr_primary=0.1 (x0_primary=3), w_thr_sensitivity=0.15 (x0_sens=5)
+resume=False
+Simulation finished in 11678.28 s
+Derived v_min: n1=0.00764669, n2=0.00898351, v_min=0.00898351
+Derived eps_v: n1=0.00819708, n2=0.00931753, eps_v=0.00931753
+Derived eps_P: n1=0.0842512, n2=0.0883068, eps_P=0.0883068

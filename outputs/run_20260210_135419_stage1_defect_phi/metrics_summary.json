@@ -1,0 +1,30 @@
+{
+  "params": {
+    "T": 200,
+    "phi_grid": {
+      "Nphi": 72,
+      "phi_start": 0.0,
+      "phi_stop": 6.283185307179586,
+      "endpoint": false
+    },
+    "sequences": [
+      "ABB"
+    ],
+    "metrics": {
+      "T0": 100,
+      "x0_loc": 2
+    }
+  },
+  "results": {
+    "ABB": {
+      "phi_at_max_abs_v_fit": 4.014257279586958,
+      "max_abs_v_fit": -0.1818791258806443,
+      "phi_at_max_w_loc": 4.886921905584122,
+      "max_w_loc": 0.6916505009055239,
+      "phi_at_phi_start": 0.0,
+      "v_fit_at_phi_start": -0.012771984090074085,
+      "deltaP_late_mean_at_phi_start": 0.08442600111819036,
+      "P0bar_at_phi_start": 0.012271552361122718
+    }
+  }
+}

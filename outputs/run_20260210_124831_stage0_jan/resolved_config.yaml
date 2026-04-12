@@ -1,0 +1,17 @@
+T: 50
+phi: 0.0
+sequences:
+- A
+- B
+- ABB
+coin_params_degrees:
+  A:
+  - 137.2
+  - 29.4
+  - 52.1
+  B:
+  - 149.6
+  - 67.4
+  - 132.5
+T0: 25
+x0_loc: 2

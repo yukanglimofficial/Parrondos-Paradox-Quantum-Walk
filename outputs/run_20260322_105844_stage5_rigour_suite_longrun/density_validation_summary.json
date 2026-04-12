@@ -1,0 +1,23 @@
+{
+  "n_points": 27,
+  "T": 120,
+  "T0": 80,
+  "T1": 100,
+  "validation_T": 120,
+  "validation_T0": 80,
+  "validation_T1": 100,
+  "N_traj": 4000,
+  "thresholds": {
+    "abs_diff_v_fit": 0.01,
+    "abs_diff_w_loc3": 0.02,
+    "abs_diff_P0bar": 0.02
+  },
+  "n_pass_all": 27,
+  "max_abs_diff_v_fit": 0.008046568741277344,
+  "max_abs_diff_w_loc3": 0.005541809092443395,
+  "max_abs_diff_P0bar": 0.0011753657368134135,
+  "max_abs_diff_w_loc5": 0.0062508854837958205,
+  "max_abs_diff_deltaP_late_mean": 0.020895031777673892,
+  "csv": "density_validation.csv",
+  "p1_phi_invariance_csv": "p1_phi_invariance.csv"
+}

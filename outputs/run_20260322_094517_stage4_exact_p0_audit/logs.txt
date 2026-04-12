@@ -1,0 +1,10 @@
+run_dir=outputs\run_20260322_094517_stage4_exact_p0_audit
+stage3_reference_run=outputs\run_20260212_090815_stage3_pd_confirmatory
+counts_exact_p0.strict=45
+counts_exact_p0.drift_parrondo=21
+counts_exact_p0.pp_primary=0
+counts_exact_p0.pp_sensitivity=1
+counts_exact_p0.mismatch_sign=1/50
+max_advantage.phi_over_pi=0.3333333333333333
+max_advantage.adv_v=0.15918236631390137
+max_abs_diff_v_fit_ABB=5.9396931817445875e-15

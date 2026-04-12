@@ -1,0 +1,40 @@
+{
+  "created_utc": "2026-03-22T10:00:11Z",
+  "tag": "stage7_exact_p0_asymptotic_suite",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.4.3",
+    "matplotlib": "3.10.8",
+    "PyYAML": "6.0.3",
+    "tqdm": "4.67.3",
+    "pytest": "9.0.2"
+  },
+  "config": "mrc.yaml",
+  "stage4_run_dir": "outputs\\run_20260322_094517_stage4_exact_p0_audit",
+  "stage5_run_dir": "outputs\\run_20260322_105844_stage5_rigour_suite_longrun",
+  "stage6_run_dir": "outputs\\run_20260322_125852_stage6_exact_p0_math_suite",
+  "T_coarse_list": [
+    3000,
+    6000
+  ],
+  "T_boundary_list": [
+    3000,
+    6000
+  ],
+  "pp_scan_points": 81,
+  "pp_tol_pi": 5e-06,
+  "T_max_list": [
+    6000
+  ],
+  "T_timeseries": 12000,
+  "spectral_L_list": [
+    80,
+    120,
+    160,
+    220
+  ],
+  "top_k_modes": 12,
+  "n_cycles_ring": 3000,
+  "burn_cycles_ring": 600
+}

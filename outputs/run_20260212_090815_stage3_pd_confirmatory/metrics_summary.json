@@ -1,0 +1,63 @@
+{
+  "stage": "stage3_pd_confirmatory",
+  "run_dir": "outputs\\run_20260212_090815_stage3_pd_confirmatory",
+  "config_path": "mrc.yaml",
+  "grid": {
+    "N_phi": 72,
+    "N_p": 31
+  },
+  "sim": {
+    "T": 300,
+    "T0": 200,
+    "T1": 250,
+    "N_traj": 400,
+    "pad_m": 2,
+    "step_order": "coin -> defect -> coin-noise -> shift",
+    "base_seed": 20260125
+  },
+  "bootstrap": {
+    "B": 1000,
+    "alpha": 0.05,
+    "ci": "percentile CI on mean(v_fit)"
+  },
+  "thresholds": {
+    "w_thr_primary": 0.1,
+    "w_thr_sensitivity": 0.15,
+    "x0_primary": 3,
+    "x0_sensitivity": 5,
+    "v_min": 0.008983509027373326,
+    "eps_v": 0.009317532244377256,
+    "eps_P": 0.08830678596863568
+  },
+  "counts": {
+    "strict_mask_points": 45,
+    "directed_transport_points_primary": 6,
+    "directed_transport_points_sensitivity": 8,
+    "parrondo_positive_points_primary": 0,
+    "parrondo_positive_points_sensitivity": 1,
+    "mismatch_sign_points": 8,
+    "mismatch_sign_denominator": 148
+  },
+  "clusters": {
+    "primary_cluster_sizes": [],
+    "primary_S_max": 0,
+    "sensitivity_cluster_sizes": [
+      1
+    ],
+    "sensitivity_S_max": 1
+  },
+  "maxima": {
+    "adv_v_max_ABB": {
+      "value": 0.15918236631390462,
+      "phi_index": 12,
+      "p_index": 0,
+      "phi": 1.0471975511965976,
+      "phi_over_pi": 0.3333333333333333,
+      "p": 0.0,
+      "v_fit_A": -0.05354750247179229,
+      "v_fit_B": -0.03879155192411138,
+      "v_fit_ABB": 0.12039081438979324
+    }
+  },
+  "timing_seconds": 11678.283684492111
+}

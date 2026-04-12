@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-03-22T15:35:24Z",
+  "tag": "stage8_rigour_bridge_suite",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.4.3",
+    "matplotlib": "3.10.8",
+    "PyYAML": "6.0.3",
+    "tqdm": "4.67.3",
+    "pytest": "9.0.2"
+  },
+  "config": "mrc.yaml",
+  "stage4_run_dir": "outputs\\run_20260322_094517_stage4_exact_p0_audit",
+  "stage5_run_dir": "outputs\\run_20260322_105844_stage5_rigour_suite_longrun",
+  "stage7_run_dir": "outputs\\run_20260322_161029_stage7_exact_p0_asymptotic_suite",
+  "T_timeseries": 24000,
+  "T_boundary_list": [
+    12000
+  ],
+  "spectral_L_list": [
+    120,
+    160,
+    220,
+    300
+  ],
+  "top_k_modes": 16,
+  "projector_k_list": [
+    2,
+    4,
+    8,
+    16
+  ],
+  "n_cycles_ring": 4000,
+  "burn_cycles_ring": 800,
+  "resume": false
+}

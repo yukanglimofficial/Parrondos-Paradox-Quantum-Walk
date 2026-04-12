@@ -1,0 +1,32 @@
+{
+  "selected_points": [
+    {
+      "label": "paper_max_T300",
+      "phi": 1.0471975511965976,
+      "phi_over_pi": 0.3333333333333333
+    },
+    {
+      "label": "long_max_Tlast",
+      "phi": 0.9599310885968813,
+      "phi_over_pi": 0.3055555555555556
+    },
+    {
+      "label": "pp_primary_long",
+      "phi": 1.7453292519943295,
+      "phi_over_pi": 0.5555555555555556
+    }
+  ],
+  "spectral_sequences": [
+    "ABB"
+  ],
+  "spectral_L_list": [
+    80,
+    120,
+    160
+  ],
+  "top_k_modes": 8,
+  "n_cycles_ring": 1500,
+  "burn_cycles_ring": 300,
+  "top_modes_csv": "spectral_top_modes.csv",
+  "convergence_csv": "spectral_convergence.csv"
+}

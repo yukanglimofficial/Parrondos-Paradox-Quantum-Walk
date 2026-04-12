@@ -1,0 +1,10 @@
+sequence,phi_index,phi,phi_over_pi,csv
+A,0,0.0,0.0,selected_timeseries\timeseries_seq_A_phi_000.csv
+A,12,1.0471975511965976,0.3333333333333333,selected_timeseries\timeseries_seq_A_phi_012.csv
+A,20,1.7453292519943295,0.5555555555555556,selected_timeseries\timeseries_seq_A_phi_020.csv
+B,0,0.0,0.0,selected_timeseries\timeseries_seq_B_phi_000.csv
+B,12,1.0471975511965976,0.3333333333333333,selected_timeseries\timeseries_seq_B_phi_012.csv
+B,20,1.7453292519943295,0.5555555555555556,selected_timeseries\timeseries_seq_B_phi_020.csv
+ABB,0,0.0,0.0,selected_timeseries\timeseries_seq_ABB_phi_000.csv
+ABB,12,1.0471975511965976,0.3333333333333333,selected_timeseries\timeseries_seq_ABB_phi_012.csv
+ABB,20,1.7453292519943295,0.5555555555555556,selected_timeseries\timeseries_seq_ABB_phi_020.csv

@@ -1,0 +1,48 @@
+{
+  "T_max_list": [
+    6000
+  ],
+  "max_region_bounds": {
+    "phi_left": 0.8290313946973065,
+    "phi_right": 1.1780972450961724,
+    "phi_left_over_pi": 0.2638888888888889,
+    "phi_right_over_pi": 0.375
+  },
+  "csv": "max_refinement.csv",
+  "rows": [
+    {
+      "policy": "fixed",
+      "T": 6000,
+      "phi": 0.9285151620609833,
+      "phi_over_pi": 0.29555555555555557,
+      "adv_v": 0.16047158883915852,
+      "v_fit_A": -0.05231722992156076,
+      "v_fit_B": -0.052331126635995664,
+      "v_fit_ABB": 0.10815435891759777,
+      "w_loc3_ABB": 0.579483674013146,
+      "w_loc5_ABB": 0.5857178221085625,
+      "P0bar_ABB": 0.18717792147788073,
+      "strict_stage3": 1,
+      "drift_stage3": 1,
+      "pp_primary": 0,
+      "pp_sensitivity": 0
+    },
+    {
+      "policy": "scaled",
+      "T": 6000,
+      "phi": 0.9288642279113821,
+      "phi_over_pi": 0.29566666666666663,
+      "adv_v": 0.16047276588744006,
+      "v_fit_A": -0.052320820207112845,
+      "v_fit_B": -0.052279895479411455,
+      "v_fit_ABB": 0.1081928704080286,
+      "w_loc3_ABB": 0.5794165367483124,
+      "w_loc5_ABB": 0.5856502255845354,
+      "P0bar_ABB": 0.18722994090628517,
+      "strict_stage3": 1,
+      "drift_stage3": 1,
+      "pp_primary": 0,
+      "pp_sensitivity": 0
+    }
+  ]
+}
